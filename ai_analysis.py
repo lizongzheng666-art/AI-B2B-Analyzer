@@ -21,7 +21,7 @@ def generate_ai_report(
 
     response = client.chat.completions.create(
 
-        model="deepseek-v4-flash",
+        model="deepseek-chat"
 
         messages=[
 

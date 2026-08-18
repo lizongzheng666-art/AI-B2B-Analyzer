@@ -1,6 +1,7 @@
 from openai import OpenAI
 import os
 
+
 def generate_ai_report(
     metrics,
     customers,
@@ -10,9 +11,6 @@ def generate_ai_report(
     trend_analysis
 ):
 
-
-
-
     client = OpenAI(
         api_key=os.getenv("DEEPSEEK_API_KEY"),
         base_url="https://api.deepseek.com"
@@ -21,7 +19,7 @@ def generate_ai_report(
 
     response = client.chat.completions.create(
 
-        model="deepseek-chat"
+        model="deepseek-chat",
 
         messages=[
 

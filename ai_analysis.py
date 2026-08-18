@@ -14,7 +14,7 @@ def generate_ai_report(
 
 
     client = OpenAI(
-        api_key=os.getenv("sk-883c28f9beb04e2685b3135f9d2634a0"),
+        api_key=os.getenv("你的key"),
         base_url="https://api.deepseek.com"
     )
 

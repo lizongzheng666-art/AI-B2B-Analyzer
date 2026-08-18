@@ -30,6 +30,25 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown(
+"""
+<style>
+
+div[data-testid="stExpander"] summary {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 20px 10px;
+}
+
+div[data-testid="stExpander"] {
+    border-radius: 12px;
+}
+
+</style>
+""",
+unsafe_allow_html=True
+)
+
 
 
 # ==========================
@@ -622,7 +641,7 @@ if uploaded_file:
 
 
     with st.expander(
-    "🔧 数据处理与清洗记录（Data Processing Log）"
+    "🧹 数据质量控制与处理流程"
     ):
 
         st.markdown(

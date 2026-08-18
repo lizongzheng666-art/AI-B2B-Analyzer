@@ -1,5 +1,5 @@
 from openai import OpenAI
-
+import os
 
 def generate_ai_report(
     metrics,
@@ -10,7 +10,7 @@ def generate_ai_report(
     trend_analysis
 ):
 
-    import os
+
 
 
     client = OpenAI(
